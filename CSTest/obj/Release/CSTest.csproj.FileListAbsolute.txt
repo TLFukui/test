@@ -1,0 +1,5 @@
+C:\Git\test\CSTest\bin\Release\CSTest.exe.config
+C:\Git\test\CSTest\bin\Release\CSTest.exe
+C:\Git\test\CSTest\bin\Release\CSTest.pdb
+C:\Git\test\CSTest\obj\Release\CSTest.exe
+C:\Git\test\CSTest\obj\Release\CSTest.pdb

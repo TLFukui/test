@@ -10,6 +10,13 @@ namespace CSTest
     {
         static void Main(string[] args)
         {
+            StrClass strCs = new StrClass();
+            string str;
+
+            str = strCs.Hello() + " " + strCs.World();
+
+            Console.WriteLine(str);
+            strCs.DebugLog("デバッグログ出力\n");
         }
     }
 }
