@@ -1,0 +1,1 @@
+C:\Git\test\CSTest\bin\Debug\CSTest.exe.config
