@@ -31,10 +31,16 @@ namespace CSTest
             }
         }
 
+        public int GetListCnt()
+        {
+            return dataList.Count;
+        }
+
         [Conditional("DEBUG")]
         public void WriteAllData()
         {
-            log.DebugLog("全てのデータを表示します\n");
+            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("[全てのデータを表示します]");
             for (int i = 0; i < dataList.Count; i++)
             {
                 for (int j = 0; j < 3; j++)
@@ -43,6 +49,7 @@ namespace CSTest
                 }
                 Console.WriteLine();
             }
+            Console.WriteLine("----------------------------------------");
         }
     }
 }
