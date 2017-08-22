@@ -18,24 +18,29 @@ namespace CSTest
             data.ReadData();
             data.WriteAllData();
 
-            Console.WriteLine("{0}までの数字で確認したい番号を入力してください(終了するには0を入力してください)", data.GetListCnt());
+            Console.WriteLine("数値を入力してください(終了するには0を入力してください)");
 
             while (true)
             {
-                var num = int.Parse(Console.ReadLine());
+                var intput = Console.ReadLine();
 
-                if(num > data.GetListCnt() || num < 0)
+                int output;
+                bool result = int.TryParse(intput, out output);
+                if (!result)
                 {
-                    Console.WriteLine("入力範囲外です。");
+                    Console.WriteLine("数値を入力してください(終了するには0を入力してください)");
+                    continue;
                 }
 
+                int num = int.Parse(intput);
                 if(num == 0)
                 {
                     break;
                 }
                 else
                 {
-                    // リストから対応する番号の文字列を取得
+                    // リストから対応する番号の文字列を表示
+                    data.GetListData(num);
                 }
             }
         }
