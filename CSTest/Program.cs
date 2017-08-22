@@ -10,13 +10,39 @@ namespace CSTest
     {
         static void Main(string[] args)
         {
-            StrClass strCs = new StrClass();
-            string str;
+            Log log = new Log();
+            DataClass data = new DataClass();
 
-            str = strCs.Hello() + " " + strCs.World();
+            log.DebugLog("デバッグモードで起動中\n");
 
-            Console.WriteLine(str);
-            strCs.DebugLog("デバッグログ出力\n");
+            data.ReadData();
+            data.WriteAllData();
+
+            Console.WriteLine("数値を入力してください(終了するには0を入力してください)");
+
+            while (true)
+            {
+                var intput = Console.ReadLine();
+
+                int output;
+                bool result = int.TryParse(intput, out output);
+                if (!result)
+                {
+                    Console.WriteLine("数値を入力してください(終了するには0を入力してください)");
+                    continue;
+                }
+
+                int num = int.Parse(intput);
+                if(num == 0)
+                {
+                    break;
+                }
+                else
+                {
+                    // リストから対応する番号の文字列を表示
+                    data.GetListData(num);
+                }
+            }
         }
     }
 }
