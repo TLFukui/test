@@ -41,7 +41,7 @@ namespace CSTest
                     }
                 }
             }
-            catch (System.Exception e)
+            catch (Exception e)
             {
                 log.ErrorLog(e.Message);
             }
