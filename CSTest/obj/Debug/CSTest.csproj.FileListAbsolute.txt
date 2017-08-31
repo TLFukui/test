@@ -1,5 +1,0 @@
-C:\Git\test\CSTest\bin\Debug\CSTest.exe.config
-C:\Git\test\CSTest\bin\Debug\CSTest.exe
-C:\Git\test\CSTest\bin\Debug\CSTest.pdb
-C:\Git\test\CSTest\obj\Debug\CSTest.exe
-C:\Git\test\CSTest\obj\Debug\CSTest.pdb
